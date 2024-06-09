@@ -2,6 +2,9 @@
 function Spaceship() { }
 Spaceship.prototype.findSpaceship = function (map) {
 
+	const rows = map.split('\n');
 
-	return spaceshipCoordinates ? spaceshipCoordinates : "Spaceship lost forever";
+	let spaceshipPosition = null; 
+
+	return spaceshipPosition ? spaceshipPosition : "Spaceship lost forever";
 };
