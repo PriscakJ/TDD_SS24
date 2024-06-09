@@ -28,4 +28,8 @@ describe('Find Spaceship', function() {
         const map = "..........\n..........\n..........\n..........\n..........\nX.........";
         expect(spaceship.findSpaceship(map)).toEqual([0, 0]);
     }); 
+	it('should return "Spaceship found at [2,2]', function(){
+        const map = "..........\n..........\n..........\n..X.......\n..........\n..........";
+        expect(spaceship.findSpaceship(map)).toEqual([2, 2]);
+    }); 
 });

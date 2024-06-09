@@ -4,4 +4,4 @@
 // not necessary due to 2) and 3) 4 -> spliting map C : map (string) => "too many points"
 5 -> creaing map : X multiple times => "more than one spaceship"
 6 -> looking for ship A : position "[0,0]" => "spaceship found"
-7 -> looking for ship C : position "[10,6]" => "spaceship found"
+7 -> looking for ship C : position "[2,2]" => "spaceship found"
