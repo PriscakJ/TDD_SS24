@@ -1,10 +1,17 @@
-// StringCalculator.js
 function Spaceship() { }
+
 Spaceship.prototype.findSpaceship = function (map) {
+    const rows = map.split('\n');
+    const numberOfRows = rows.length;
 
-	const rows = map.split('\n');
+    let spaceshipPosition = null; 
 
-	let spaceshipPosition = null; 
+    if (numberOfRows > 6) {
+        return "Too many rows"};
 
-	return spaceshipPosition ? spaceshipPosition : "Spaceship lost forever";
+	if (map != '' && numberOfRows<6){
+		return "Too few rows"};
+	
+
+    return spaceshipPosition ? spaceshipPosition : "Spaceship lost forever";
 };
