@@ -1,7 +1,7 @@
 const request = require("superagent");
 const { Order } = require("./order");
 
-const hostname = "127.0.0.1"
+const hostname = "127.0.0.2"
 
 const fetchOrders = () => {
   return request.get(`http://${hostname}:${process.env.API_PORT}/orders`).then(
