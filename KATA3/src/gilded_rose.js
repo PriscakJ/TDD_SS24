@@ -13,7 +13,6 @@ items.push(new Item('Sulfuras, Hand of Ragnaros', 0, 80));
 items.push(new Item('Backstage passes to a TAFKAL80ETC concert', 15, 20));
 items.push(new Item('Conjured Mana Cake', 3, 6));
 
-// First commit -> last else-statement refactored 
 function updateAgedBrie(item) {
   if (item.quality < 50) {
     item.quality = item.quality + 1;
