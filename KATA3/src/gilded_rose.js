@@ -19,10 +19,28 @@ function updateAgedBrie(item) {
   }
 }
 
+function updateBackstagePass(item) {
+  if (item.quality < 50) {
+    item.quality = item.quality + 1;
+    if (item.sell_in < 11) {
+      if (item.quality < 50) {
+        item.quality = item.quality + 1;
+      }
+    }
+    if (item.sell_in < 6) {
+      if (item.quality < 50) {
+        item.quality = item.quality + 1;
+      }
+    }
+  }
+}
+
 function update_quality() {
   for (var i = 0; i < items.length; i++) {
     if (items[i].name == 'Aged Brie') {
       updateAgedBrie(items[i]);
+    } else if (items[i].name == 'Backstage passes to a TAFKAL80ETC concert') {
+      updateBackstagePass(items[i]);
     } else if (items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
       if (items[i].quality > 0) {
         if (items[i].name != 'Sulfuras, Hand of Ragnaros') {
